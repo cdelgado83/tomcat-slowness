@@ -13,3 +13,5 @@ org.springframework.boot.web.embedded.tomcat.TomcatEmbeddedWebappClassLoader
 ```java
 Thread.currentThread().getContextClassLoader().
 ```
+
+The slowness appears while trying to load with ``Class.forName()`` a class _that does not exist_.
